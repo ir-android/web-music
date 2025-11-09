@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Starbuzz</title>
+	</head>
+
+	<body>
+		<h1>The Starbuzz Bean Machine</h1>
+		<p>Fill out the form below and click "order now" to order</p>
+
+		<form>
+			<label>Choose your beans:
+        			<select name="beans">
+          				<option>House Blend</option>
+        			</select>
+      			</label>
+
+        		<p>Type:<br/>
+				<label><input type="radio" name="type" value="whole"> Whole bean</label><br/>
+        			<label><input type="radio" name="type" value="ground" checked> Ground</label>
+			</p>	
+
+        		<label>Number of bags:
+          			<input type="number" name="bags">
+        		</label>
+
+			<br/><br/>
+
+        		<label>Must arrive by date:
+          			<input type="date" name="date">
+        		</label>
+
+        		<p>Extras:<br/>
+				<label><input type="checkbox" name="gift"> Gift wrap</label><br/>
+        			<label><input type="checkbox" name="catalog" checked> Include catalog with order</label>
+			</p>
+        			
+      			<p>Ship to:<br/>
+				<label>Name:<input type="text" name="ship_name"></label><br/>
+      				<label>Address:<input type="text" name="ship_addr"></label><br/>
+      				<label>City:<input type="text" name="ship_city"></label><br/>
+      				<label>State:<input type="text" name="ship_state"></label><br/>
+      				<label>Zip:<input type="text" name="ship_zip"></label><br/>
+      				<label>Phone:<input type="text" name="ship_phone"></label>
+			</p>
+      			
+        		<label>Customer Comments:
+          			<textarea name="comments"></textarea>
+        		</label>
+
+			<br/><br/>
+
+      			<button type="submit">Order Now</button>
+    		</form>
+	</body>
+</html>

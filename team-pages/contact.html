@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تماس با ما | ایراندروید</title>
+  <style>
+    body {font-family: sans-serif; background: #f7f9fc; margin: 0; padding: 0; direction: rtl;}
+    .navbar ul {display: flex; justify-content: center; background: #004aad; list-style: none; margin: 0; padding: 10px;}
+    .navbar li {margin: 0 15px;}
+    .navbar a {color: white; text-decoration: none;}
+    .container {max-width: 600px; margin: 50px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+    h1 {text-align: center; color: #004aad;}
+    label {display: block; margin-top: 10px;}
+    input, textarea {width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px;}
+    button {margin-top: 15px; background: #004aad; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer;}
+    button:hover {background: #00327a;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="team.html">تیم ما</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>تماس با ما</h1>
+    <p>برای ارتباط با تیم ایراندروید، لطفاً فرم زیر را تکمیل کنید:</p>
+    <form action="#" method="post">
+      <label for="name">نام و نام خانوادگی:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">ایمیل:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">پیام شما:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">ارسال پیام</button>
+    </form>
+  </div>
+
+</body>
+</html>
