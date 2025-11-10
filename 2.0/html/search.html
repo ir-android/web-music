@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>جستجو — سایت موسیقی</title>
+  <link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">م</div>
+      <div>
+        <h1>موزیک‌سایت</h1>
+        <div style="font-size:12px;color:var(--muted)">صفحهٔ جستجو</div>
+      </div>
+    </div>
+    <nav class="primary">
+      <a href="home.html">خانه</a>
+      <a href="discover.html">کشف</a>
+      <a href="library.html">کتابخانه من</a>
+      <a href="search.html" aria-current="page">جستجو</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input type="text" placeholder="جستجو برای آهنگ، هنرمند یا آلبوم... (نمونه ناوبری)" readonly>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <section class="section">
+      <h3>نتایج پیشنهادی</h3>
+      <div class="result-list">
+        <a class="card" href="player.html"><div class="cover">آهنگ الف</div><div class="meta">هنرمند الف</div></a>
+        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#FF7A7A,#FFB86B)">آهنگ ب</div><div class="meta">هنرمند ب</div></a>
+        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#4DD0E1,#7C4DFF)">آلبوم ج</div><div class="meta">هنرمند ج</div></a>
+        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#7afcff,#7c5cff)">پلی‌لیست تمرکز</div><div class="meta">۲۲ ترک</div></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>جستجوهای اخیر</h3>
+      <div class="result-list">
+        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#2EC7A7,#1990FF)">هنرمند د</div><div class="meta">۴ آلبوم</div></a>
+        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#8fbaff,#a18cff)">پلی‌لیست شبانه</div><div class="meta">۱۵ ترک</div></a>
+      </div>
+    </section>
+
+    <p class="footnote">صفحهٔ جستجو فقط برای ناوبری به صفحات جزئیات و پخش طراحی شده و هیچ عملکرد دیگری ندارد.</p>
+  </main>
+</body>
+</html>
