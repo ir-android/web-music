@@ -6,16 +6,18 @@
   <title>جستجو — سایت موسیقی</title>
   <link rel="stylesheet" href="../css/Style.css">
 </head>
+
 <body>
   <header class="topbar">
-    <div class="brand">
+    <section class="brand">
       <div class="logo">م</div>
-      <div>
+      <header>
         <h1>موزیک‌سایت</h1>
-        <div style="font-size:12px;color:var(--muted)">صفحهٔ جستجو</div>
-      </div>
-    </div>
-    <nav class="primary">
+        <p style="font-size:12px;color:var(--muted)">صفحهٔ جستجو</p>
+      </header>
+    </section>
+
+    <nav class="primary" aria-label="مسیر اصلی سایت">
       <a href="home.html">خانه</a>
       <a href="discover.html">کشف</a>
       <a href="library.html">کتابخانه من</a>
@@ -24,33 +26,83 @@
   </header>
 
   <main>
-    <div class="search-bar">
-      <input type="text" placeholder="جستجو برای آهنگ، هنرمند یا آلبوم... (نمونه ناوبری)" readonly>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+    <section class="search-bar">
+      <label>
+        <input type="search" placeholder="جستجو برای آهنگ، هنرمند یا آلبوم... (نمونه ناوبری)" readonly>
+      </label>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-    </div>
+    </section>
 
-    <section class="section">
+    <section>
       <h3>نتایج پیشنهادی</h3>
-      <div class="result-list">
-        <a class="card" href="player.html"><div class="cover">آهنگ الف</div><div class="meta">هنرمند الف</div></a>
-        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#FF7A7A,#FFB86B)">آهنگ ب</div><div class="meta">هنرمند ب</div></a>
-        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#4DD0E1,#7C4DFF)">آلبوم ج</div><div class="meta">هنرمند ج</div></a>
-        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#7afcff,#7c5cff)">پلی‌لیست تمرکز</div><div class="meta">۲۲ ترک</div></a>
-      </div>
+      <ul class="result-list" role="list">
+        <li>
+          <article class="card">
+            <a href="player.html">
+              <figure class="cover">آهنگ الف</figure>
+              <p class="meta">هنرمند الف</p>
+            </a>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <a href="player.html">
+              <figure class="cover" style="background:linear-gradient(135deg,#FF7A7A,#FFB86B)">آهنگ ب</figure>
+              <p class="meta">هنرمند ب</p>
+            </a>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <a href="player.html">
+              <figure class="cover" style="background:linear-gradient(135deg,#4DD0E1,#7C4DFF)">آلبوم ج</figure>
+              <p class="meta">هنرمند ج</p>
+            </a>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <a href="player.html">
+              <figure class="cover" style="background:linear-gradient(135deg,#7afcff,#7c5cff)">پلی‌لیست تمرکز</figure>
+              <p class="meta">۲۲ ترک</p>
+            </a>
+          </article>
+        </li>
+      </ul>
     </section>
 
-    <section class="section">
+    <section>
       <h3>جستجوهای اخیر</h3>
-      <div class="result-list">
-        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#2EC7A7,#1990FF)">هنرمند د</div><div class="meta">۴ آلبوم</div></a>
-        <a class="card" href="player.html"><div class="cover" style="background:linear-gradient(135deg,#8fbaff,#a18cff)">پلی‌لیست شبانه</div><div class="meta">۱۵ ترک</div></a>
-      </div>
+      <ul class="result-list" role="list">
+        <li>
+          <article class="card">
+            <a href="player.html">
+              <figure class="cover" style="background:linear-gradient(135deg,#2EC7A7,#1990FF)">هنرمند د</figure>
+              <p class="meta">۴ آلبوم</p>
+            </a>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <a href="player.html">
+              <figure class="cover" style="background:linear-gradient(135deg,#8fbaff,#a18cff)">پلی‌لیست شبانه</figure>
+              <p class="meta">۱۵ ترک</p>
+            </a>
+          </article>
+        </li>
+      </ul>
     </section>
 
-    <p class="footnote">صفحهٔ جستجو فقط برای ناوبری به صفحات جزئیات و پخش طراحی شده و هیچ عملکرد دیگری ندارد.</p>
+    <footer>
+      <p class="footnote">صفحهٔ جستجو فقط برای ناوبری به صفحات جزئیات و پخش طراحی شده و هیچ عملکرد دیگری ندارد.</p>
+    </footer>
   </main>
 </body>
 </html>
