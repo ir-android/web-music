@@ -295,4 +295,61 @@ a:focus {
   font-size: 13px;
   color: var(--muted);
   text-align: center;
+
+}
+
+/* ----------------- Primary Button ----------------- */
+.m-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 64px;
+  height: 34px;                 /* small size */
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: 160ms cubic-bezier(.2,.8,.2,1);
+}
+
+/* Filled Primary */
+.m-btn--primary {
+  background: linear-gradient(135deg, var(--accent), #3fb7ff);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(124, 92, 255, 0.22),
+              inset 0 -4px 10px rgba(255, 255, 255, 0.06);
+}
+
+.m-btn--primary:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(124, 92, 255, 0.32);
+}
+
+.m-btn--primary:active {
+  transform: translateY(0);
+  filter: brightness(0.96);
+  box-shadow: 0 4px 12px rgba(124, 92, 255, 0.18);
+}
+
+/* focus (accessibility) */
+.m-btn:focus-visible {
+  outline: 2px solid rgba(124, 92, 255, 0.32);
+  outline-offset: 3px;
+}
+
+/* disabled */
+.m-btn:disabled,
+.m-btn[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: default;
+  pointer-events: none;
+  box-shadow: none;
+  transform: none;
 }
